@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obsidian: #14110d;
+  --surface: #1e1a14;
+  --surface-2: #262019;
+  --brass: #b8935a;
+  --brass-bright: #d4ac78;
+  --brass-dim: rgba(184, 147, 90, 0.14);
+  --bone: #ede6d9;
+  --stone: #8c8477;
+  --hair: rgba(237, 230, 217, 0.1);
+}
+
+* {
+  border-color: var(--hair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--obsidian);
+  color: var(--bone);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+:focus-visible {
+  outline: 1.5px solid var(--brass);
+  outline-offset: 1px;
+}
+
+/* Motivo sona — única animação do site. Traça-se uma vez, nunca em loop. */
+.sona-draw path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: sona-draw 2.4s ease-out 0.3s forwards;
+}
+
+@keyframes sona-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .sona-draw path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
