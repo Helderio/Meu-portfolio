@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="mx-auto flex max-w-6xl flex-col items-start gap-12 px-6 py-20 min-[820px]:flex-row min-[820px]:items-center min-[820px]:justify-between min-[820px]:py-28">
       <div className="max-w-xl">
-        <p className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.15em] text-stone">
+        <p className="flex items-center gap-3 font-mono text-sm uppercase tracking-[0.15em] text-stone">
           <span className="h-px w-[18px] bg-brass" aria-hidden="true" />
           {hero.eyebrow}
         </p>

@@ -1,19 +1,5 @@
 import { cn } from "@/shared/lib/utils";
-
-const SONA_PATH =
-  "M 40 40 L 160 40 L 160 100 L 100 100 L 100 160 L 40 160 L 40 100 L 100 100 L 100 40 M 40 100 L 40 40 M 160 100 L 160 160 L 100 160";
-
-const GRID_DOTS = [
-  [40, 40],
-  [100, 40],
-  [160, 40],
-  [40, 100],
-  [100, 100],
-  [160, 100],
-  [40, 160],
-  [100, 160],
-  [160, 160],
-] as const;
+import { SONA_PATH, SONA_GRID_DOTS } from "./sona-path";
 
 interface SonaMarkProps {
   size?: number;
@@ -51,7 +37,7 @@ export function SonaMark({
         strokeLinejoin="round"
       />
       {renderDots &&
-        GRID_DOTS.map(([cx, cy]) => (
+        SONA_GRID_DOTS.map(([cx, cy]) => (
           <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r={3} fill="var(--bone)" />
         ))}
     </svg>

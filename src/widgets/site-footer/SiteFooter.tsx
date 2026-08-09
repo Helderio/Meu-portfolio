@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="mx-auto max-w-6xl px-6 py-16">
       <SonaDivider />
       <div className="mt-10 flex flex-col items-start justify-between gap-6 min-[721px]:flex-row min-[721px]:items-center">
-        <p className="font-mono text-xs text-stone">
+        <p className="font-mono text-sm text-stone">
           {site.studioName} · {site.location}
         </p>
         <a

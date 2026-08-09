@@ -14,7 +14,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         style={{ backgroundColor: project.accent }}
         aria-hidden="true"
       />
-      <p className="font-mono text-xs uppercase tracking-wide text-stone">{project.kicker}</p>
+      <p className="font-mono text-sm uppercase tracking-wide text-stone">{project.kicker}</p>
       <h3 className="mt-3 font-display text-2xl font-bold text-bone">{project.name}</h3>
       <p className="mt-3 text-bone">{project.problem}</p>
       <p className="mt-2 text-sm text-stone">{project.detail}</p>

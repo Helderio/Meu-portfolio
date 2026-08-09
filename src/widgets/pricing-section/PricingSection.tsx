@@ -12,13 +12,13 @@ export function PricingSection() {
       </h2>
 
       <div className="mt-14 grid grid-cols-1 min-[721px]:grid-cols-[1.7fr_0.9fr_0.9fr]">
-        <div className="hidden bg-surface-2 px-6 py-3 font-mono text-xs uppercase tracking-wide text-stone min-[721px]:block">
+        <div className="hidden bg-surface-2 px-6 py-3 font-mono text-sm uppercase tracking-wide text-stone min-[721px]:block">
           Serviço
         </div>
-        <div className="hidden bg-surface-2 px-6 py-3 font-mono text-xs uppercase tracking-wide text-stone min-[721px]:block">
+        <div className="hidden bg-surface-2 px-6 py-3 font-mono text-sm uppercase tracking-wide text-stone min-[721px]:block">
           Prazo
         </div>
-        <div className="hidden bg-surface-2 px-6 py-3 font-mono text-xs uppercase tracking-wide text-stone min-[721px]:block">
+        <div className="hidden bg-surface-2 px-6 py-3 font-mono text-sm uppercase tracking-wide text-stone min-[721px]:block">
           A partir de
         </div>
         {services.map((service) => (

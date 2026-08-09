@@ -22,7 +22,7 @@ export function AboutSection() {
           {aboutStats.map((stat) => (
             <div key={stat.label} className="border-t border-hair pt-4">
               <p className="font-display text-2xl font-bold text-brass-bright">{stat.value}</p>
-              <p className="mt-1 font-mono text-xs uppercase tracking-wide text-stone">
+              <p className="mt-1 font-mono text-sm uppercase tracking-wide text-stone">
                 {stat.label}
               </p>
             </div>
