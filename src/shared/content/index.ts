@@ -1,7 +1,5 @@
 export { projects } from "./projects";
-export type { Project, ProjectCategory } from "./projects";
 export { services, pricingNote } from "./services";
-export type { Service } from "./services";
 export {
   site,
   navLinks,
